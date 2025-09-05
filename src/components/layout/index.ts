@@ -1,7 +1,8 @@
-// Layout components
-export { Container } from './container'
-export { Grid, GridItem } from './grid'
-export { Stack } from './stack'
-export { Flex } from './flex'
-export { Card, CardHeader, CardContent, CardFooter, CardTitle, CardDescription } from '../ui/card'
-export { Separator } from '../ui/separator'
+// Layout primitives
+export { Container } from './primitives/container'
+export { Grid, GridItem } from './primitives/grid'
+export { Stack } from './primitives/stack'
+export { Flex } from './primitives/flex'
+
+// Dashboard layout components
+export * from './dashboard'

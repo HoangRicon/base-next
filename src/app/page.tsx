@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { ThemeProvider } from '@/contexts/theme-context'
-import { ComponentShowcase } from '@/components/demo/component-showcase'
+import { ComponentShowcase } from '@/components/ui/component-showcase'
 import { Toaster } from '@/components/ui/sonner'
 
 export default function HomePage() {

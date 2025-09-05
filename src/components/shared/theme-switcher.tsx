@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { useTheme } from '@/contexts/theme-context'
-import { ThemeMode, ThemeVariant } from '@/lib/themes'
+import { ThemeMode, ThemeVariant, getThemeColors } from '@/lib/themes'
 import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
@@ -16,6 +16,18 @@ import { Moon, Sun, Monitor, Palette } from 'lucide-react'
 
 interface ThemeSwitcherProps {
   className?: string
+}
+
+function VariantColorPreview({ variant }: { variant: ThemeVariant }) {
+  const colors = getThemeColors(variant, 'light')
+  return (
+    <div
+      className="w-4 h-4 rounded-full border"
+      style={{
+        backgroundColor: colors.primary,
+      }}
+    />
+  )
 }
 
 export function ThemeSwitcher({ className }: ThemeSwitcherProps) {
@@ -86,12 +98,7 @@ export function ThemeSwitcher({ className }: ThemeSwitcherProps) {
               className={theme.variant === variant ? 'bg-accent' : ''}
             >
               <div className="flex items-center gap-2">
-                <div 
-                  className="w-4 h-4 rounded-full border"
-                  style={{
-                    backgroundColor: `var(--primary)`,
-                  }}
-                />
+                <VariantColorPreview variant={variant} />
                 {getVariantName(variant)}
               </div>
             </DropdownMenuItem>

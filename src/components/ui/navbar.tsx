@@ -1,6 +1,6 @@
 import React from 'react'
 import { cn } from '@/lib/utils'
-import { Container } from '@/components/layout/container'
+import { Container } from '@/components/layout'
 
 interface NavbarProps extends React.HTMLAttributes<HTMLElement> {
   variant?: 'default' | 'floating' | 'bordered'

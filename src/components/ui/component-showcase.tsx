@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useState } from 'react'
+import { Container } from '@/components/layout'
 import {
-  Container,
   Card,
   CardHeader,
   CardContent,
@@ -29,13 +29,14 @@ import {
   TabsList,
   TabsTrigger,
   Separator
-} from '@/components'
-import { ThemeSwitcher } from '@/components/theme-switcher'
-import { Navbar, NavbarBrand, NavbarContent } from '@/components/navigation/navbar'
-import { FormField, FormGroup } from '@/components/forms'
-import { LoadingSpinner } from '@/components/feedback/loading-spinner'
-import { EmptyState } from '@/components/data-display/empty-state'
-import { Modal, ConfirmModal } from '@/components/overlays/modal'
+} from '@/components/ui'
+import { ThemeSwitcher } from '@/components/shared/theme-switcher'
+import { Navbar, NavbarBrand, NavbarContent } from './navbar'
+import { FormField } from './form-field'
+import { FormGroup } from './form-group'
+import { LoadingSpinner } from './loading-spinner'
+import { EmptyState } from './empty-state'
+import { Modal, ConfirmModal } from './modal'
 import { useTheme } from '@/contexts/theme-context'
 import { toast } from 'sonner'
 import {

@@ -239,7 +239,7 @@ export function DashboardSidebar({ isOpen = true, onClose, className, onToggle, 
         <div className="flex items-center justify-center w-8 h-8 bg-primary rounded-lg">
           <Package className="h-5 w-5 text-primary-foreground" />
         </div>
-        {!isCollapsed && <h2 className="text-lg font-semibold">Hệ thống Quản lý Kho hàng</h2>}
+        {!isCollapsed && <h2 className="text-lg font-semibold">Hệ thống Quản lý</h2>}
       </div>
       <Separator />
       <ScrollArea className="flex-1 px-3">

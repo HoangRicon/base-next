@@ -56,13 +56,7 @@ export function DashboardHeader({
             </Button>
           )}
           
-          <div className="flex items-center gap-3">
-            <div className="hidden sm:block">
-              <h1 className="text-lg font-semibold text-foreground">
-                {title}
-              </h1>
-            </div>
-          </div>
+          
         </div>
 
         {/* Right section: Theme switcher + Notifications + User menu */}
